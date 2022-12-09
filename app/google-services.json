@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "480862252468",
+    "project_id": "accescontrol-d92f5",
+    "storage_bucket": "accescontrol-d92f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480862252468:android:f4eddf04b4b98db7fb16e1",
+        "android_client_info": {
+          "package_name": "com.polarindustries.accescontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480862252468-qs3hgu0f32o5m2rdc7q9vgqqjist6afr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChgqCUJW_FKYevC2ar3_zYaV8b2aygs1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480862252468-qs3hgu0f32o5m2rdc7q9vgqqjist6afr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

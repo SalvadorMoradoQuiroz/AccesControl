@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_blue"
+    tools:context=".PrincipalUsuarioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewNoticias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_news" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/groupFloating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:fab_addButtonColorNormal="@color/principal_blue"
+        app:fab_addButtonColorPressed="@color/tenue">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/principal_blue"
+            app:fab_colorNormal="@color/white"
+            app:fab_icon="@drawable/ic_twotone_qr_code_2_24"
+            app:fab_size="normal">
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingFeedBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/principal_blue"
+            app:fab_colorNormal="@color/white"
+            app:fab_icon="@drawable/ic_twotone_feedback_24"
+            app:fab_size="normal">
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
