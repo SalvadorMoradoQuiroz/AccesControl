@@ -25,7 +25,7 @@ class AreasRecreativasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_areas_recreativas)
 
-        title = "Áreas recreativas"
+        title = "Establecimientos"
 
 
         val validacion: String? =  intent.getStringExtra("variableControl")

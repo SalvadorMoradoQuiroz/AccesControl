@@ -2,12 +2,14 @@ package com.polarindustries.accescontrol.adaptadores
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.polarindustries.accescontrol.ConsultaFeedBackActivity
 import com.polarindustries.accescontrol.R
 import com.polarindustries.accescontrol.modelos.Feedback
 
@@ -32,9 +34,12 @@ class AdaptadorFeedBack(private val context: Context, private val listadoFeed: A
         holder.textViewOpinioFeed.text = feedbackActual.opinion
 
         holder.cardViewOpinion.setOnClickListener {
-            //Cambiar actividad
+            val intent = Intent(context, ConsultaFeedBackActivity::class.java)
+            context.startActivity(intent)
         }
     }
+
+
 
     override fun getItemCount(): Int {
         return listadoFeed.size
