@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         carView_Admin.setOnClickListener{
-
+            val intent: Intent = Intent(this@MainActivity, InicioDeSesionAdminEspacioActivity::class.java)
+            startActivity(intent)
         }
     }
 }
