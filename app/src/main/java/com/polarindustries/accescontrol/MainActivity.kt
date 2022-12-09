@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         cardView_Security.setOnClickListener{
-
+            val intent: Intent = Intent(this@MainActivity, IniciarSesionGuardiaActivity::class.java)
+            startActivity(intent)
         }
 
         carView_Admin.setOnClickListener{

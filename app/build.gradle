@@ -55,4 +55,7 @@ dependencies {
 
     //implementacion del creador  qr
     implementation 'com.github.kenglxn.QRGen:android:2.5.0'
+
+    //implementacion lector qr
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 }
